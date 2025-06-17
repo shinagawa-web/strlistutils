@@ -1,6 +1,6 @@
 # strlistutils
 
-![Go Test](https://github.com/shinagawa-web/strlistutils/actions/workflows/test.yml/badge.svg)
+![Test](https://github.com/shinagawa-web/strlistutils/actions/workflows/test.yml/badge.svg)
 
 
 🧰 Utility functions for working with []string in Go.  
