@@ -1,7 +1,10 @@
 # strlistutils
 
-**strlistutils** is a small utility library for working with `[]string` in Go.  
-It provides common operations like removing duplicates, trimming, filtering, and more.
+![Go Test](https://github.com/shinagawa-web/strlistutils/actions/workflows/test.yml/badge.svg)
+
+
+🧰 Utility functions for working with []string in Go.  
+📦 Documentation: https://pkg.go.dev/github.com/shinagawa-web/strlistutils
 
 ## Features
 
@@ -34,11 +37,13 @@ func main() {
 }
 ```
 
+➡️ For more examples, see [GoDoc](https://pkg.go.dev/github.com/shinagawa-web/strlistutils) or [examples](https://github.com/shinagawa-web/strlistutils/blob/main/strlistutils_example_test.go)
+
 ## Roadmap
 
 - [x] RemoveDuplicates
-- [ ] TrimEach
-- [ ] FilterEmpty
+- [x] TrimEach
+- [x] FilterEmpty
 - [ ] Contains
 - [ ] IndexOf
 
