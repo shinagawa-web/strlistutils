@@ -1,6 +1,10 @@
 # strlistutils
 
 ![Test](https://github.com/shinagawa-web/strlistutils/actions/workflows/test.yml/badge.svg)
+[![codecov](https://codecov.io/gh/shinagawa-web/strlistutils/graph/badge.svg?token=D76743O8J1)](https://codecov.io/gh/shinagawa-web/strlistutils)
+[![Go Report Card](https://goreportcard.com/badge/github.com/shinagawa-web/strlistutils)](https://goreportcard.com/report/github.com/shinagawa-web/strlistutils)
+[![Go Reference](https://pkg.go.dev/badge/github.com/shinagawa-web/strlistutils.svg)](https://pkg.go.dev/github.com/shinagawa-web/strlistutils)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 
 🧰 Utility functions for working with []string in Go.  
