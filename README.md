@@ -62,19 +62,17 @@ func main() {
 - [x] RemoveDuplicates
 - [x] TrimEach
 - [x] FilterEmpty
-- [ ] Contains
-- [ ] IndexOf
-- [ ] Map
-- [ ] Filter
-- [ ] Join
-- [ ] Reverse
+- [x] Map
+- [x] Filter
+- [x] Join
+- [x] Reverse
 
 ### 🧪 Testing & Quality
 
 - [x] GitHub Actions (CI)
 - [x] Codecov integration
-- [ ] Add Fuzz testing
-- [ ] Add Benchmark tests
+- [x] Add Fuzz testing
+- [x] Add Benchmark tests
 
 ### 📚 Documentation
 

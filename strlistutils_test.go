@@ -33,50 +33,6 @@ func TestFilterEmpty(t *testing.T) {
 	}
 }
 
-func TestContains(t *testing.T) {
-	tests := []struct {
-		name     string
-		list     []string
-		target   string
-		expected bool
-	}{
-		{"found", []string{"  apple ", " banana", "orange "}, " banana", true},
-		{"not found", []string{"  apple ", " banana", "orange "}, "grape", false},
-		{"empty list", []string{}, " banana", false},
-	}
-
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			result := Contains(tt.list, tt.target)
-			if result != tt.expected {
-				t.Errorf("Contains(%v, %q) = %v; want %v", tt.list, tt.target, result, tt.expected)
-			}
-		})
-	}
-}
-
-func TestIndexOf(t *testing.T) {
-	tests := []struct {
-		name     string
-		list     []string
-		target   string
-		expected int
-	}{
-		{"found", []string{"  apple ", " banana", "orange "}, "orange ", 2},
-		{"not found", []string{"  apple ", " banana", "orange "}, "grape", -1},
-		{"empty list", []string{}, " banana", -1},
-	}
-
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			result := IndexOf(tt.list, tt.target)
-			if result != tt.expected {
-				t.Errorf("IndexOf(%v, %q) = %d; want %d", tt.list, tt.target, result, tt.expected)
-			}
-		})
-	}
-}
-
 func TestMap(t *testing.T) {
 	input := []string{"  apple ", " banana", "orange "}
 	expected := []string{"apple", "banana", "orange"}

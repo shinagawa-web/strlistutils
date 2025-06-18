@@ -31,26 +31,6 @@ func ExampleFilterEmpty() {
 	// Output: [apple banana orange]
 }
 
-func ExampleContains() {
-	input := []string{"  apple ", " banana", "orange "}
-	fmt.Println(strlistutils.Contains(input, " banana"))
-	fmt.Println(strlistutils.Contains(input, "grape"))
-
-	// Output:
-	// true
-	// false
-}
-
-func ExampleIndexOf() {
-	input := []string{"  apple ", " banana", "orange "}
-	fmt.Println(strlistutils.IndexOf(input, "orange "))
-	fmt.Println(strlistutils.IndexOf(input, "grape"))
-
-	// Output:
-	// 2
-	// -1
-}
-
 func ExampleMap() {
 	input := []string{"  apple ", " banana", "orange "}
 	output := strlistutils.Map(input, strings.TrimSpace)

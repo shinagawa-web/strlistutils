@@ -27,3 +27,6 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           slug: shinagawa-web/strlistutils
+
+      - name: Run benchmarks
+        run: go test -bench=. -benchmem ./...
