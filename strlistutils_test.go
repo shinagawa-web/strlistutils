@@ -93,3 +93,37 @@ func TestMap(t *testing.T) {
 		}
 	}
 }
+
+func TestFilter(t *testing.T) {
+	input := []string{"apple", "banana", "", "orange", ""}
+	expected := []string{"apple", "banana", "orange"}
+	result := Filter(input, func(s string) bool { return s != "" })
+	if len(result) != len(expected) {
+		t.Fatalf("Filter length = %d; want %d", len(result), len(expected))
+	}
+	for i := range expected {
+		if result[i] != expected[i] {
+			t.Errorf("Filter result[%d] = %q; want %q", i, result[i], expected[i])
+		}
+	}
+}
+
+func TestJoin(t *testing.T) {
+	input := []string{"apple", "banana", "orange"}
+	expected := "apple,banana,orange"
+	result := Join(input, ",")
+	if result != expected {
+		t.Errorf("Join(%v, %q) = %q; want %q", input, ",", result, expected)
+	}
+}
+
+func TestReverse(t *testing.T) {
+	input := []string{"apple", "banana", "orange"}
+	expected := []string{"orange", "banana", "apple"}
+	result := Reverse(input)
+	for i := range expected {
+		if result[i] != expected[i] {
+			t.Errorf("Reverse result[%d] = %q; want %q", i, result[i], expected[i])
+		}
+	}
+}

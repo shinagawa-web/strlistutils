@@ -59,3 +59,24 @@ func ExampleMap() {
 	// Output:
 	// [apple banana orange]
 }
+
+func ExampleFilter() {
+	input := []string{"apple", "banana", "", "orange", ""}
+	output := strlistutils.Filter(input, func(s string) bool { return s != "" })
+	fmt.Println(output)
+	// Output: [apple banana orange]
+}
+
+func ExampleJoin() {
+	input := []string{"apple", "banana", "orange"}
+	output := strlistutils.Join(input, ",")
+	fmt.Println(output)
+	// Output: apple,banana,orange
+}
+
+func ExampleReverse() {
+	input := []string{"apple", "banana", "orange"}
+	output := strlistutils.Reverse(input)
+	fmt.Println(output)
+	// Output: [orange banana apple]
+}

@@ -69,3 +69,29 @@ func Map(list []string, f func(string) string) []string {
 	}
 	return result
 }
+
+// Filter returns a new list containing only the elements for which the predicate returns true.
+func Filter(list []string, predicate func(string) bool) []string {
+	result := make([]string, 0, len(list))
+	for _, s := range list {
+		if predicate(s) {
+			result = append(result, s)
+		}
+	}
+	return result
+}
+
+// Join joins all elements of the list into a single string with the given separator.
+func Join(list []string, sep string) string {
+	return strings.Join(list, sep)
+}
+
+// Reverse returns a new list with the elements in reverse order.
+func Reverse(list []string) []string {
+	n := len(list)
+	result := make([]string, n)
+	for i, s := range list {
+		result[n-1-i] = s
+	}
+	return result
+}
