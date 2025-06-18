@@ -21,8 +21,10 @@
 ## Installation
 
 ```bash
-go get github.com/shinagawa-web/strlistutils@v0.1.0
+go get github.com/shinagawa-web/strlistutils@v0.2.0
 ```
+
+🔒 It is recommended to pin a version to avoid unexpected breaking changes.
 
 ## Usage
 
@@ -43,13 +45,50 @@ func main() {
 
 ➡️ For more examples, see [GoDoc](https://pkg.go.dev/github.com/shinagawa-web/strlistutils) or [examples](https://github.com/shinagawa-web/strlistutils/blob/main/strlistutils_example_test.go)
 
+## Available Functions
+
+| Name | Description |
+|------|-------------|
+| `RemoveDuplicates` | Removes duplicate elements, preserving order |
+| `TrimEach` | Trims leading/trailing whitespace from each string |
+| `FilterEmpty` | Removes empty strings |
+| `Map` | Applies a function to each element |
+| `Filter` | Keeps elements that match a condition |
+
 ## Roadmap
+
+### ✅ Core Utilities
 
 - [x] RemoveDuplicates
 - [x] TrimEach
 - [x] FilterEmpty
 - [ ] Contains
 - [ ] IndexOf
+- [ ] Map
+- [ ] Filter
+- [ ] Join
+- [ ] Reverse
+
+### 🧪 Testing & Quality
+
+- [x] GitHub Actions (CI)
+- [x] Codecov integration
+- [ ] Add Fuzz testing
+- [ ] Add Benchmark tests
+
+### 📚 Documentation
+
+- [x] GoDoc examples
+- [x] Function usage table
+- [ ] Add real-world usage examples
+- [ ] Write Zenn/Qiita article
+
+### 🚀 Release Milestones
+
+- [x] v0.1.0: Initial release with basic utilities
+- [x] v0.2.0: Expanded with more functions and CI integration
+- [ ] v0.3.0: Add Map / Filter / Join and prepare for feature completeness
+- [ ] v1.0.0: API freeze, complete documentation, production-ready release
 
 ## License
 

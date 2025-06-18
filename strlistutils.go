@@ -39,3 +39,33 @@ func FilterEmpty(input []string) []string {
 	}
 	return result
 }
+
+// Contains returns true if the target string is present in the list.
+func Contains(list []string, target string) bool {
+	for _, s := range list {
+		if s == target {
+			return true
+		}
+	}
+	return false
+}
+
+// IndexOf returns the index of the target string in the list.
+// If not found, it returns -1.
+func IndexOf(list []string, target string) int {
+	for i, s := range list {
+		if s == target {
+			return i
+		}
+	}
+	return -1
+}
+
+// Map applies a function to each string in the list and returns a new list.
+func Map(list []string, f func(string) string) []string {
+	result := make([]string, len(list))
+	for i, s := range list {
+		result[i] = f(s)
+	}
+	return result
+}
